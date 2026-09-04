@@ -748,8 +748,9 @@ section {
 
 
 /* ===============================
-   DEMO SECTION
-   WARM CHARCOAL / BROWN
+   REQUEST DEMO
+   SAME TEAL BACKGROUND
+   AS GET STARTED TODAY
 ================================ */
 
 .demo-section {
@@ -761,17 +762,15 @@ section {
     padding: 100px 7%;
 
     background:
-        radial-gradient(circle at 20% 20%,
-            rgba(255, 102, 28, 0.08),
-            transparent 30%),
+        radial-gradient(circle at 72% 30%,
+            rgba(22, 112, 111, 0.18),
+            transparent 34%),
         linear-gradient(135deg,
-            #171310 0%,
-            #221914 48%,
-            #130f0d 100%);
+            #062b31 0%,
+            #07383e 45%,
+            #052329 100%);
 
     color: white;
-
-    border-bottom: 1px solid rgba(255, 111, 30, 0.12);
 }
 
 .demo-copy h2 {
@@ -781,7 +780,7 @@ section {
 }
 
 .demo-copy>p:not(.eyebrow) {
-    color: #c1b6ae;
+    color: #c0cdca;
     line-height: 1.7;
 }
 
@@ -793,10 +792,9 @@ form {
     padding: 32px;
     border-radius: 22px;
     background: white;
-
     box-shadow:
-        0 25px 65px rgba(0, 0, 0, 0.34),
-        0 0 0 1px rgba(255, 255, 255, 0.05);
+        0 25px 65px rgba(0, 0, 0, 0.30),
+        0 0 0 1px rgba(255, 255, 255, 0.04);
 }
 
 .form-grid {
@@ -861,7 +859,7 @@ form {
 
     color: white;
 
-    border-top: 1px solid rgba(255, 118, 26, 0.16);
+    border-top: 1px solid rgba(255, 118, 26, 0.10);
 }
 
 .smart-cta-inner {
@@ -1017,27 +1015,18 @@ form {
     overflow: hidden;
 }
 
-
-/* curved join instead of harsh split */
-
 .smart-visual::before {
     content: "";
     position: absolute;
     z-index: 4;
-
     width: 170px;
-
     top: -40px;
     bottom: -40px;
     left: -95px;
-
     border-right: 8px solid #ff6718;
     border-radius: 0 50% 50% 0;
-
     background: #07343a;
-
-    box-shadow:
-        20px 0 45px rgba(0, 0, 0, 0.08);
+    box-shadow: 20px 0 45px rgba(0, 0, 0, 0.08);
 }
 
 .smart-image {
