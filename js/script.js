@@ -1,44 +1,44 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const menu =
-        document.querySelector(".menu");
+    /* =====================================================
+       MOBILE NAVIGATION
+    ===================================================== */
 
-    const nav =
-        document.querySelector(".nav nav");
+    const menuButton = document.querySelector(".menu");
+    const navigation = document.querySelector(".nav nav");
+    const navLinks = document.querySelectorAll(".nav nav a");
 
-    const navLinks =
-        document.querySelectorAll(".nav nav a");
+    if (menuButton && navigation) {
 
-    const sections =
-        document.querySelectorAll("main section[id]");
+        menuButton.addEventListener("click", () => {
 
-    const heroVideo =
-        document.querySelector(".hero-background-video");
+            navigation.classList.toggle("open");
 
+            const isOpen = navigation.classList.contains("open");
 
-    /* MOBILE MENU */
-
-    if (menu && nav) {
-
-        menu.addEventListener("click", () => {
-
-            nav.classList.toggle("open");
+            menuButton.setAttribute(
+                "aria-expanded",
+                isOpen ? "true" : "false"
+            );
 
         });
 
     }
 
 
-    /* CLOSE MOBILE MENU */
-
-    navLinks.forEach(link => {
+    navLinks.forEach((link) => {
 
         link.addEventListener("click", () => {
 
-            if (nav) {
+            if (navigation) {
+                navigation.classList.remove("open");
+            }
 
-                nav.classList.remove("open");
-
+            if (menuButton) {
+                menuButton.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
             }
 
         });
@@ -46,18 +46,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    /* ACTIVE NAVIGATION */
+    /* =====================================================
+       ACTIVE NAVIGATION
+    ===================================================== */
+
+    const sections =
+        document.querySelectorAll("main section[id]");
 
     const updateActiveNavigation = () => {
 
         let currentSection = "home";
 
-
-        sections.forEach(section => {
+        sections.forEach((section) => {
 
             const sectionTop =
                 section.offsetTop - 160;
-
 
             if (window.scrollY >= sectionTop) {
 
@@ -69,10 +72,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
 
-        navLinks.forEach(link => {
+        navLinks.forEach((link) => {
 
             link.classList.remove("active");
-
 
             if (
                 link.getAttribute("href") ===
@@ -93,17 +95,17 @@ document.addEventListener("DOMContentLoaded", () => {
         updateActiveNavigation
     );
 
-
     updateActiveNavigation();
 
 
-    /* FAQ */
+    /* =====================================================
+       FAQ ACCORDION
+    ===================================================== */
 
     const faqItems =
         document.querySelectorAll(".faq details");
 
-
-    faqItems.forEach(item => {
+    faqItems.forEach((item) => {
 
         item.addEventListener("toggle", () => {
 
@@ -111,14 +113,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
-
-            faqItems.forEach(otherItem => {
+            faqItems.forEach((otherItem) => {
 
                 if (otherItem !== item) {
 
-                    otherItem.removeAttribute(
-                        "open"
-                    );
+                    otherItem.removeAttribute("open");
 
                 }
 
@@ -129,26 +128,43 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    /* HERO VIDEO */
+    /* =====================================================
+       HERO VIDEO
+    ===================================================== */
+
+    const heroVideo =
+        document.querySelector(
+            ".hero-background-video"
+        );
 
     if (heroVideo) {
 
         heroVideo.muted = true;
+
+        heroVideo.setAttribute(
+            "muted",
+            ""
+        );
+
+        heroVideo.setAttribute(
+            "playsinline",
+            ""
+        );
 
 
         const playPromise =
             heroVideo.play();
 
 
-        if (
-            playPromise !== undefined
-        ) {
+        if (playPromise !== undefined) {
 
             playPromise.catch(() => {
 
-                console.log(
-                    "Video autoplay was blocked by the browser."
-                );
+                /*
+                 Browser may temporarily block autoplay.
+                 The video remains muted and can play when
+                 browser autoplay requirements are satisfied.
+                */
 
             });
 
