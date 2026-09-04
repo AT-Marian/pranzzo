@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll("main section[id]");
 
 
-    /* ==================================================
+    /* =========================================
        MOBILE MENU
-    ================================================== */
+    ========================================= */
 
     if (menu && nav) {
 
@@ -28,9 +28,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* ==================================================
-       CLOSE MENU AFTER CLICK
-    ================================================== */
+    /* =========================================
+       CLOSE MOBILE MENU AFTER CLICK
+    ========================================= */
 
     navLinks.forEach(link => {
 
@@ -47,9 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    /* ==================================================
-       ACTIVE NAV ITEM
-    ================================================== */
+    /* =========================================
+       ACTIVE NAVIGATION
+    ========================================= */
 
     const updateActiveNavigation = () => {
 
@@ -77,8 +77,12 @@ document.addEventListener("DOMContentLoaded", () => {
             link.classList.remove("active");
 
 
+            const href =
+                link.getAttribute("href");
+
+
             if (
-                link.getAttribute("href") ===
+                href ===
                 `#${currentSection}`
             ) {
 
@@ -100,10 +104,10 @@ document.addEventListener("DOMContentLoaded", () => {
     updateActiveNavigation();
 
 
-    /* ==================================================
+    /* =========================================
        FAQ
        ONLY ONE OPEN AT A TIME
-    ================================================== */
+    ========================================= */
 
     const faqItems =
         document.querySelectorAll(".faq details");
@@ -111,26 +115,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
     faqItems.forEach(item => {
 
-        item.addEventListener("toggle", () => {
+        item.addEventListener(
+            "toggle",
+            () => {
 
-            if (!item.open) {
-                return;
-            }
-
-
-            faqItems.forEach(otherItem => {
-
-                if (otherItem !== item) {
-
-                    otherItem.removeAttribute(
-                        "open"
-                    );
-
+                if (!item.open) {
+                    return;
                 }
 
-            });
 
-        });
+                faqItems.forEach(otherItem => {
+
+                    if (
+                        otherItem !== item
+                    ) {
+
+                        otherItem.removeAttribute(
+                            "open"
+                        );
+
+                    }
+
+                });
+
+            }
+        );
 
     });
 
