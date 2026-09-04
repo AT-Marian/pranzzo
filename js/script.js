@@ -1,1 +1,18 @@
-document.addEventListener('DOMContentLoaded',()=>{const menu=document.querySelector('.menu'),nav=document.querySelector('.nav nav');menu?.addEventListener('click',()=>nav.classList.toggle('open'));document.querySelectorAll('.nav nav a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));const form=document.getElementById('demoForm');form?.addEventListener('submit',e=>{e.preventDefault();if(!form.checkValidity()){form.reportValidity();return;}const g=id=>document.getElementById(id).value.trim();const subject=encodeURIComponent(`New Pranzzo Demo Request - ${g('businessName')}`);const body=encodeURIComponent(`New Pranzzo Demo Request\n\nBusiness: ${g('businessName')}\nName: ${g('clientName')}\nEmail: ${g('clientEmail')}\nPhone: ${g('phone')}\nBusiness Type: ${g('businessType')}\nPreferred Demo: ${g('meetingType')}\n\nMessage:\n${g('message')}\n\nSubmitted through the Pranzzo website.`);window.location.href=`mailto:atmarian200114@gmail.com?subject=${subject}&body=${body}`;});});
+document.addEventListener('DOMContentLoaded', () => {
+
+    const menu = document.querySelector('.menu');
+    const nav = document.querySelector('.nav nav');
+
+    menu?.addEventListener('click', () => {
+        nav.classList.toggle('open');
+    });
+
+    document.querySelectorAll('.nav nav a').forEach(link => {
+
+        link.addEventListener('click', () => {
+            nav.classList.remove('open');
+        });
+
+    });
+
+});
