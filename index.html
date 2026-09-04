@@ -21,9 +21,7 @@
 
 <body>
 
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
+    <!-- NAVIGATION -->
 
     <header class="nav">
 
@@ -56,9 +54,7 @@
 
     <main>
 
-        <!-- =========================
-             HERO
-        ========================== -->
+        <!-- HERO -->
 
         <section class="hero" id="home">
 
@@ -125,7 +121,6 @@
 
                 </div>
 
-
                 <div>
 
                     <i class="green">👨‍🍳</i>
@@ -144,9 +139,7 @@
         </section>
 
 
-        <!-- =========================
-             HOW IT WORKS
-        ========================== -->
+        <!-- HOW IT WORKS -->
 
         <section class="section light" id="how">
 
@@ -166,8 +159,6 @@
 
 
             <div class="steps">
-
-                <!-- STEP 1 -->
 
                 <article>
 
@@ -193,8 +184,6 @@
                 </article>
 
 
-                <!-- STEP 2 -->
-
                 <article>
 
                     <div class="step-media">
@@ -218,8 +207,6 @@
 
                 </article>
 
-
-                <!-- STEP 3 -->
 
                 <article>
 
@@ -245,8 +232,6 @@
                 </article>
 
 
-                <!-- STEP 4 -->
-
                 <article>
 
                     <div class="step-media">
@@ -270,8 +255,6 @@
 
                 </article>
 
-
-                <!-- STEP 5 -->
 
                 <article>
 
@@ -301,9 +284,7 @@
         </section>
 
 
-        <!-- =========================
-             SOLUTIONS
-        ========================== -->
+        <!-- SOLUTIONS -->
 
         <section class="solutions" id="solutions">
 
@@ -366,9 +347,7 @@
         </section>
 
 
-        <!-- =========================
-             BENEFITS
-        ========================== -->
+        <!-- BENEFITS -->
 
         <section class="section dark" id="benefits">
 
@@ -386,80 +365,39 @@
             <div class="benefits">
 
                 <article>
-
                     <span>⚡</span>
-
                     <h3>Faster Service</h3>
-
-                    <p>
-                        Reduce waiting by letting guests order directly.
-                    </p>
-
+                    <p>Reduce waiting by letting guests order directly.</p>
                 </article>
 
-
                 <article>
-
                     <span>✓</span>
-
                     <h3>Fewer Errors</h3>
-
-                    <p>
-                        Orders move digitally from customer to kitchen.
-                    </p>
-
+                    <p>Orders move digitally from customer to kitchen.</p>
                 </article>
 
-
                 <article>
-
                     <span>💳</span>
-
                     <h3>Easy Payments</h3>
-
-                    <p>
-                        Support a smoother digital payment experience.
-                    </p>
-
+                    <p>Support a smoother digital payment experience.</p>
                 </article>
 
-
                 <article>
-
                     <span>👨‍🍳</span>
-
                     <h3>Kitchen Connection</h3>
-
-                    <p>
-                        Send requests directly into the preparation workflow.
-                    </p>
-
+                    <p>Send requests directly into the preparation workflow.</p>
                 </article>
 
-
                 <article>
-
                     <span>📈</span>
-
                     <h3>Smarter Operations</h3>
-
-                    <p>
-                        Build a more efficient, scalable hospitality experience.
-                    </p>
-
+                    <p>Build a more efficient, scalable hospitality experience.</p>
                 </article>
 
-
                 <article>
-
                     <span>😊</span>
-
                     <h3>Happier Guests</h3>
-
-                    <p>
-                        Give customers a simple, modern way to order.
-                    </p>
-
+                    <p>Give customers a simple, modern way to order.</p>
                 </article>
 
             </div>
@@ -467,9 +405,7 @@
         </section>
 
 
-        <!-- =========================
-             FOR HOTELS
-        ========================== -->
+        <!-- HOTELS -->
 
         <section class="split hotel" id="hotels">
 
@@ -508,9 +444,7 @@
         </section>
 
 
-        <!-- =========================
-             FOR RESTAURANTS
-        ========================== -->
+        <!-- RESTAURANTS -->
 
         <section class="split reverse" id="restaurants">
 
@@ -543,15 +477,12 @@
 
             </div>
 
-
             <div class="photo restaurant-photo"></div>
 
         </section>
 
 
-        <!-- =========================
-             FAQ
-        ========================== -->
+        <!-- FAQ -->
 
         <section class="section light" id="faq">
 
@@ -628,9 +559,7 @@
         </section>
 
 
-        <!-- =========================
-             REQUEST DEMO
-        ========================== -->
+        <!-- REQUEST DEMO -->
 
         <section class="demo-section" id="demo">
 
@@ -652,20 +581,30 @@
             </div>
 
 
-            <form id="demoForm">
+            <form id="demoForm" name="demo-request" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+
+                <input type="hidden" name="form-name" value="demo-request">
+
+                <p class="hidden-field">
+                    <label>
+                        Don't fill this out if you're human:
+                        <input name="bot-field">
+                    </label>
+                </p>
+
 
                 <div class="form-grid">
 
-                    <input id="businessName" required placeholder="Restaurant / Hotel Name">
+                    <input id="businessName" name="businessName" required placeholder="Restaurant / Hotel Name">
 
-                    <input id="clientName" required placeholder="Your Name">
+                    <input id="clientName" name="clientName" required placeholder="Your Name">
 
-                    <input id="clientEmail" type="email" required placeholder="Email Address">
+                    <input id="clientEmail" name="clientEmail" type="email" required placeholder="Email Address">
 
-                    <input id="phone" required placeholder="Phone Number">
+                    <input id="phone" name="phone" required placeholder="Phone Number">
 
 
-                    <select id="businessType" required>
+                    <select id="businessType" name="businessType" required>
 
                         <option value="">
                             Business Type
@@ -681,41 +620,46 @@
                     </select>
 
 
-                    <select id="meetingType">
+                    <select id="meetingType" name="meetingType">
 
-                        <option>
-                            Online Meeting
-                        </option>
-
-                        <option>
-                            Physical Meeting
-                        </option>
+                        <option>Online Meeting</option>
+                        <option>Physical Meeting</option>
 
                     </select>
 
 
-                    <textarea id="message" placeholder="Tell us a little about your business"></textarea>
+                    <textarea id="message" name="message" placeholder="Tell us a little about your business"></textarea>
 
                 </div>
 
 
-                <button class="demo submit" type="submit">
+                <button class="demo submit" id="submitButton" type="submit">
                     Request My Demo
                 </button>
 
 
                 <p class="form-note">
-                    Your email app will open with the request ready to send to our team.
+                    Your demo request will be sent directly to our team.
                 </p>
+
+
+                <div id="formSuccess" class="success-message" aria-live="polite">
+                    ✓ Thank you! Your demo request has been submitted successfully.
+                    Our team will contact you soon.
+                </div>
+
+
+                <div id="formError" class="error-message" aria-live="polite">
+                    Something went wrong while sending your request.
+                    Please try again.
+                </div>
 
             </form>
 
         </section>
 
 
-        <!-- =========================
-             CONTACT
-        ========================== -->
+        <!-- CONTACT -->
 
         <section class="contact" id="contact">
 
@@ -745,9 +689,7 @@
     </main>
 
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
+    <!-- FOOTER -->
 
     <footer>
 
@@ -773,10 +715,6 @@
 
     </footer>
 
-
-    <!-- =========================
-         CHAT BUTTON
-    ========================== -->
 
     <a class="chat" href="mailto:atmarian200114@gmail.com?subject=Pranzzo%20Enquiry">
         💬 Chat with us

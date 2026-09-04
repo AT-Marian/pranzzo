@@ -19,9 +19,7 @@ a {
 }
 
 
-/* =========================
-   NAVIGATION
-========================= */
+/* NAVIGATION */
 
 .nav {
     height: 80px;
@@ -97,9 +95,7 @@ a {
 }
 
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero {
     min-height: 690px;
@@ -108,6 +104,7 @@ a {
     display: flex;
     align-items: center;
     padding: 70px 5%;
+
     background:
         linear-gradient(90deg,
             #040806f2 0%,
@@ -183,9 +180,7 @@ a {
 }
 
 
-/* =========================
-   HERO STATUS
-========================= */
+/* STATUS */
 
 .status {
     position: absolute;
@@ -233,9 +228,7 @@ a {
 }
 
 
-/* =========================
-   GENERAL SECTIONS
-========================= */
+/* GENERAL */
 
 .section {
     padding: 95px 5%;
@@ -288,9 +281,7 @@ a {
 }
 
 
-/* =========================
-   HOW IT WORKS
-========================= */
+/* HOW IT WORKS */
 
 .steps {
     display: grid;
@@ -315,6 +306,7 @@ a {
 
 .steps article:hover {
     transform: translateY(-6px);
+
     box-shadow:
         0 20px 40px #00000014,
         0 0 0 1px #ff681733;
@@ -378,29 +370,12 @@ a {
 }
 
 
-/* =========================
-   BENEFIT CARD BASE
-========================= */
-
-.benefits article {
-    background: #fff;
-    border-radius: 18px;
-    padding: 25px;
-    box-shadow: 0 12px 35px #0000000d;
-}
-
-.benefits p {
-    color: #68736d;
-}
-
-
-/* =========================
-   SOLUTIONS
-========================= */
+/* SOLUTIONS */
 
 .solutions {
     padding: 95px 5%;
     color: #fff;
+
     background:
         linear-gradient(#07100cc9,
             #07100ce8),
@@ -433,9 +408,7 @@ a {
 }
 
 
-/* =========================
-   BENEFITS
-========================= */
+/* BENEFITS */
 
 .benefits {
     display: grid;
@@ -448,6 +421,9 @@ a {
 .benefits article {
     background: #ffffff0c;
     border: 1px solid #ffffff15;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 12px 35px #0000000d;
 }
 
 .benefits span {
@@ -459,9 +435,7 @@ a {
 }
 
 
-/* =========================
-   HOTEL / RESTAURANT
-========================= */
+/* HOTEL / RESTAURANT */
 
 .split {
     display: grid;
@@ -517,9 +491,7 @@ a {
 }
 
 
-/* =========================
-   FAQ
-========================= */
+/* FAQ */
 
 .faq {
     max-width: 900px;
@@ -544,9 +516,7 @@ a {
 }
 
 
-/* =========================
-   DEMO SECTION
-========================= */
+/* DEMO SECTION */
 
 .demo-section {
     background: #0c1d16;
@@ -596,26 +566,66 @@ form {
     margin-top: 14px;
 }
 
+.submit:disabled {
+    opacity: .7;
+    cursor: not-allowed;
+}
+
 .form-note {
     color: #7b847f;
     font-size: 11px;
     text-align: center;
 }
 
+.hidden-field {
+    display: none;
+}
 
-/* =========================
-   CONTACT
-========================= */
+.success-message {
+    display: none;
+    margin-top: 18px;
+    padding: 15px 18px;
+    border-radius: 10px;
+    background: #eaf8ef;
+    border: 1px solid #a9dfbb;
+    color: #18713d;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.error-message {
+    display: none;
+    margin-top: 18px;
+    padding: 15px 18px;
+    border-radius: 10px;
+    background: #fff0ed;
+    border: 1px solid #f0b8ad;
+    color: #a52a20;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.success-message.show,
+.error-message.show {
+    display: block;
+}
+
+
+/* CONTACT */
 
 .contact {
     text-align: center;
     position: relative;
     padding: 85px 5%;
+
     background:
         linear-gradient(180deg,
             #0c1d16 0%,
             #09130e 50%,
             #050a07 100%);
+
     color: #fff;
 }
 
@@ -672,13 +682,9 @@ form {
     padding: 16px 36px;
     border-radius: 12px;
     font-weight: 700;
-
-    box-shadow:
-        0 12px 30px #ff681755;
-
+    box-shadow: 0 12px 30px #ff681755;
     border: 0;
     display: inline-block;
-
     transition: all .2s ease;
 }
 
@@ -689,15 +695,11 @@ form {
             #e64e00);
 
     transform: translateY(-2px);
-
-    box-shadow:
-        0 16px 36px #ff681777;
+    box-shadow: 0 16px 36px #ff681777;
 }
 
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer {
     background: #050a07;
@@ -717,33 +719,23 @@ footer>small {
 }
 
 
-/* =========================
-   CHAT BUTTON
-========================= */
+/* CHAT */
 
 .chat {
     position: fixed;
     right: 20px;
     bottom: 20px;
     z-index: 30;
-
     background: #18aa61;
     color: #fff;
-
     padding: 13px 19px;
-
     border-radius: 40px;
-
     font-weight: 700;
-
-    box-shadow:
-        0 12px 30px #0003;
+    box-shadow: 0 12px 30px #0003;
 }
 
 
-/* =========================
-   TABLET
-========================= */
+/* TABLET */
 
 @media (max-width: 1100px) {
 
@@ -765,11 +757,8 @@ footer>small {
         top: 80px;
         left: 0;
         right: 0;
-
         background: #08100c;
-
         padding: 25px 5%;
-
         flex-direction: column;
     }
 
@@ -787,9 +776,7 @@ footer>small {
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 
 @media (max-width: 760px) {
 
