@@ -26,18 +26,14 @@
 <body>
 
 
-    <!-- =====================================================
-     NAVIGATION
-===================================================== -->
+    <!-- NAVIGATION -->
 
     <header class="nav">
 
         <a href="#home" class="navbar-brand">
 
             <span class="logo-circle">
-
                 <img src="assets/pranzzo-logo.png" alt="Pranzzo logo">
-
             </span>
 
             <span class="brand-name">
@@ -105,12 +101,22 @@
 
 
         <!-- =====================================================
-     HERO — BLACK
+     HERO WITH VIDEO
 ===================================================== -->
 
-        <section class="hero dark-section" id="home">
+        <section class="hero-video" id="home">
 
-            <div class="hero-copy">
+            <video class="hero-background-video" autoplay muted loop playsinline preload="auto">
+
+                <source src="assets/videos/pranzzo-hero.mp4" type="video/mp4">
+
+            </video>
+
+
+            <div class="hero-video-overlay"></div>
+
+
+            <div class="hero-video-content">
 
                 <div class="hero-pill">
                     ✦ Built for modern hospitality
@@ -181,43 +187,35 @@
             </div>
 
 
-            <div class="hero-visual">
+            <div class="hero-video-brand">
 
-                <div class="hero-photo"></div>
+                <span class="logo-circle hero-logo-circle">
 
-                <div class="hero-photo-shade"></div>
+                    <img src="assets/pranzzo-logo.png" alt="Pranzzo">
 
-                <div class="hero-curve"></div>
-
-
-                <div class="floating-brand-card">
-
-                    <div class="floating-logo">
-
-                        <img src="assets/pranzzo-logo.png" alt="Pranzzo">
-
-                    </div>
+                </span>
 
 
-                    <div>
+                <div>
 
-                        <small>
-                            MODERN HOSPITALITY
-                        </small>
+                    <small>
+                        PRANZZO
+                    </small>
 
-                        <strong>
-                            Scan. Order. Enjoy.
-                        </strong>
-
-                        <p>
-                            A smoother way to serve.
-                        </p>
-
-                    </div>
+                    <strong>
+                        Scan. Order. Enjoy.
+                    </strong>
 
                 </div>
 
             </div>
+
+
+            <a href="#how" class="scroll-indicator" aria-label="Scroll to How It Works">
+
+                <span></span>
+
+            </a>
 
         </section>
 
@@ -276,13 +274,17 @@
 
                 <!-- ARROW 1 -->
 
-                <div class="flow-arrow">
+                <div class="flow-arrow arrow-low">
 
-                    <svg viewBox="0 0 130 80" preserveAspectRatio="none" aria-hidden="true">
+                    <svg viewBox="0 0 180 120" aria-hidden="true">
 
-                        <path class="arrow-curve" d="M6 53 C35 17, 78 15, 113 48" />
+                        <path class="flow-curve" d="M5 35
+                       C45 35, 45 90, 90 90
+                       C130 90, 135 55, 166 55" />
 
-                        <path class="arrow-tip" d="M100 39 L115 49 L101 59" />
+                        <path class="flow-head" d="M153 43
+                       L168 55
+                       L153 67" />
 
                     </svg>
 
@@ -291,7 +293,7 @@
 
                 <!-- STEP 2 -->
 
-                <article class="flow-step">
+                <article class="flow-step lower-step">
 
                     <div class="step-image">
 
@@ -317,13 +319,17 @@
 
                 <!-- ARROW 2 -->
 
-                <div class="flow-arrow">
+                <div class="flow-arrow arrow-high">
 
-                    <svg viewBox="0 0 130 80" preserveAspectRatio="none" aria-hidden="true">
+                    <svg viewBox="0 0 180 120" aria-hidden="true">
 
-                        <path class="arrow-curve" d="M6 53 C35 17, 78 15, 113 48" />
+                        <path class="flow-curve" d="M5 82
+                       C45 82, 45 30, 90 30
+                       C130 30, 135 63, 166 63" />
 
-                        <path class="arrow-tip" d="M100 39 L115 49 L101 59" />
+                        <path class="flow-head" d="M153 51
+                       L168 63
+                       L153 75" />
 
                     </svg>
 
@@ -358,13 +364,17 @@
 
                 <!-- ARROW 3 -->
 
-                <div class="flow-arrow">
+                <div class="flow-arrow arrow-low">
 
-                    <svg viewBox="0 0 130 80" preserveAspectRatio="none" aria-hidden="true">
+                    <svg viewBox="0 0 180 120" aria-hidden="true">
 
-                        <path class="arrow-curve" d="M6 53 C35 17, 78 15, 113 48" />
+                        <path class="flow-curve" d="M5 35
+                       C45 35, 45 90, 90 90
+                       C130 90, 135 55, 166 55" />
 
-                        <path class="arrow-tip" d="M100 39 L115 49 L101 59" />
+                        <path class="flow-head" d="M153 43
+                       L168 55
+                       L153 67" />
 
                     </svg>
 
@@ -373,7 +383,7 @@
 
                 <!-- STEP 4 -->
 
-                <article class="flow-step">
+                <article class="flow-step lower-step">
 
                     <div class="step-image">
 
@@ -399,13 +409,17 @@
 
                 <!-- ARROW 4 -->
 
-                <div class="flow-arrow">
+                <div class="flow-arrow arrow-high">
 
-                    <svg viewBox="0 0 130 80" preserveAspectRatio="none" aria-hidden="true">
+                    <svg viewBox="0 0 180 120" aria-hidden="true">
 
-                        <path class="arrow-curve" d="M6 53 C35 17, 78 15, 113 48" />
+                        <path class="flow-curve" d="M5 82
+                       C45 82, 45 30, 90 30
+                       C130 30, 135 63, 166 63" />
 
-                        <path class="arrow-tip" d="M100 39 L115 49 L101 59" />
+                        <path class="flow-head" d="M153 51
+                       L168 63
+                       L153 75" />
 
                     </svg>
 
@@ -499,92 +513,39 @@
             <div class="solution-grid">
 
                 <article>
-
                     <span>🏨</span>
-
-                    <h3>
-                        Hotels
-                    </h3>
-
-                    <p>
-                        Modern room ordering without repeated phone calls.
-                    </p>
-
+                    <h3>Hotels</h3>
+                    <p>Modern room ordering without repeated phone calls.</p>
                 </article>
 
-
                 <article>
-
                     <span>🍽</span>
-
-                    <h3>
-                        Restaurants
-                    </h3>
-
-                    <p>
-                        Smarter table service with quicker ordering.
-                    </p>
-
+                    <h3>Restaurants</h3>
+                    <p>Smarter table service with quicker ordering.</p>
                 </article>
 
-
                 <article>
-
                     <span>☕</span>
-
-                    <h3>
-                        Cafés
-                    </h3>
-
-                    <p>
-                        Quick ordering for busy customer service.
-                    </p>
-
+                    <h3>Cafés</h3>
+                    <p>Quick ordering for busy customer service.</p>
                 </article>
 
-
                 <article>
-
                     <span>🌴</span>
-
-                    <h3>
-                        Resorts
-                    </h3>
-
-                    <p>
-                        Connect rooms, restaurants and service points.
-                    </p>
-
+                    <h3>Resorts</h3>
+                    <p>Connect rooms, restaurants and service points.</p>
                 </article>
 
-
                 <article>
-
                     <span>🏠</span>
-
-                    <h3>
-                        Guest Houses
-                    </h3>
-
-                    <p>
-                        Introduce digital service with a simple setup.
-                    </p>
-
+                    <h3>Guest Houses</h3>
+                    <p>Introduce digital service with a simple setup.</p>
                 </article>
 
-
                 <article>
-
                     <span>👑</span>
-
-                    <h3>
-                        Hospitality Chains
-                    </h3>
-
-                    <p>
-                        Deliver a consistent experience across locations.
-                    </p>
-
+                    <h3>Hospitality Chains</h3>
+                    <p>Deliver a consistent experience across locations.</p>
                 </article>
 
             </div>
@@ -615,92 +576,39 @@
             <div class="benefits-grid">
 
                 <article>
-
                     <span>⚡</span>
-
-                    <h3>
-                        Faster Service
-                    </h3>
-
-                    <p>
-                        Reduce waiting and help guests place orders quickly.
-                    </p>
-
+                    <h3>Faster Service</h3>
+                    <p>Reduce waiting and help guests place orders quickly.</p>
                 </article>
 
-
                 <article>
-
                     <span>✓</span>
-
-                    <h3>
-                        Fewer Errors
-                    </h3>
-
-                    <p>
-                        Digital orders reduce unnecessary communication mistakes.
-                    </p>
-
+                    <h3>Fewer Errors</h3>
+                    <p>Digital orders reduce unnecessary communication mistakes.</p>
                 </article>
 
-
                 <article>
-
                     <span>💳</span>
-
-                    <h3>
-                        Easy Payments
-                    </h3>
-
-                    <p>
-                        Give guests a smoother digital payment experience.
-                    </p>
-
+                    <h3>Easy Payments</h3>
+                    <p>Give guests a smoother digital payment experience.</p>
                 </article>
 
-
                 <article>
-
                     <span>👨‍🍳</span>
-
-                    <h3>
-                        Kitchen Connection
-                    </h3>
-
-                    <p>
-                        Send requests directly into your preparation workflow.
-                    </p>
-
+                    <h3>Kitchen Connection</h3>
+                    <p>Send requests directly into your preparation workflow.</p>
                 </article>
 
-
                 <article>
-
                     <span>📈</span>
-
-                    <h3>
-                        Higher Efficiency
-                    </h3>
-
-                    <p>
-                        Build a smoother workflow for your hospitality team.
-                    </p>
-
+                    <h3>Higher Efficiency</h3>
+                    <p>Build a smoother workflow for your hospitality team.</p>
                 </article>
 
-
                 <article>
-
                     <span>😊</span>
-
-                    <h3>
-                        Happier Guests
-                    </h3>
-
-                    <p>
-                        Give customers a simple and modern ordering journey.
-                    </p>
-
+                    <h3>Happier Guests</h3>
+                    <p>Give customers a simple and modern ordering journey.</p>
                 </article>
 
             </div>
@@ -735,21 +643,10 @@
 
                 <ul>
 
-                    <li>
-                        Less waiting on room-service calls
-                    </li>
-
-                    <li>
-                        Instant kitchen/POS order flow
-                    </li>
-
-                    <li>
-                        Better staff communication
-                    </li>
-
-                    <li>
-                        Convenient digital payments
-                    </li>
+                    <li>Less waiting on room-service calls</li>
+                    <li>Instant kitchen/POS order flow</li>
+                    <li>Better staff communication</li>
+                    <li>Convenient digital payments</li>
 
                 </ul>
 
@@ -788,25 +685,11 @@
 
                 <ul>
 
-                    <li>
-                        Faster table service
-                    </li>
-
-                    <li>
-                        Reduced waiting time
-                    </li>
-
-                    <li>
-                        Fewer ordering mistakes
-                    </li>
-
-                    <li>
-                        Faster kitchen communication
-                    </li>
-
-                    <li>
-                        Better customer experience
-                    </li>
+                    <li>Faster table service</li>
+                    <li>Reduced waiting time</li>
+                    <li>Fewer ordering mistakes</li>
+                    <li>Faster kitchen communication</li>
+                    <li>Better customer experience</li>
 
                 </ul>
 
@@ -932,17 +815,9 @@
 
                 <div class="demo-benefits">
 
-                    <span>
-                        ✓ No App Required
-                    </span>
-
-                    <span>
-                        ✓ Easy Setup
-                    </span>
-
-                    <span>
-                        ✓ Built for Hospitality
-                    </span>
+                    <span>✓ No App Required</span>
+                    <span>✓ Easy Setup</span>
+                    <span>✓ Built for Hospitality</span>
 
                 </div>
 
@@ -1048,19 +923,16 @@
 
                 <div class="smart-features">
 
-
                     <div>
 
                         <span>⚡</span>
 
                         <p>
-
                             <strong>
                                 Faster Service
                             </strong>
 
                             Reduce waiting and serve guests faster.
-
                         </p>
 
                     </div>
@@ -1071,13 +943,11 @@
                         <span>◉</span>
 
                         <p>
-
                             <strong>
                                 Higher Efficiency
                             </strong>
 
                             Streamline ordering and kitchen communication.
-
                         </p>
 
                     </div>
@@ -1088,13 +958,11 @@
                         <span>✦</span>
 
                         <p>
-
                             <strong>
                                 Modern Experience
                             </strong>
 
                             Give guests a smoother digital ordering journey.
-
                         </p>
 
                     </div>
@@ -1161,9 +1029,7 @@
     </main>
 
 
-    <!-- =====================================================
-     FOOTER
-===================================================== -->
+    <!-- FOOTER -->
 
     <footer>
 
@@ -1204,9 +1070,7 @@
     </footer>
 
 
-    <!-- =====================================================
-     WHATSAPP
-===================================================== -->
+    <!-- WHATSAPP -->
 
     <a class="chat"
         href="https://wa.me/94724334484?text=Hi%20Pranzzo%2C%20I%20would%20like%20to%20know%20more%20about%20your%20QR%20ordering%20solution."
