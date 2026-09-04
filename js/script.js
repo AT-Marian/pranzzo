@@ -1,13 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const menu = document.querySelector(".menu");
-    const nav = document.querySelector(".nav nav");
-    const navLinks = document.querySelectorAll(".nav nav a");
+    const menu =
+        document.querySelector(".menu");
+
+    const nav =
+        document.querySelector(".nav nav");
+
+    const navLinks =
+        document.querySelectorAll(".nav nav a");
+
+    const sections =
+        document.querySelectorAll("main section[id]");
 
 
-    /* =========================================
+    /* ==================================================
        MOBILE MENU
-    ========================================= */
+    ================================================== */
 
     if (menu && nav) {
 
@@ -20,9 +28,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* =========================================
-       CLOSE MOBILE MENU
-    ========================================= */
+    /* ==================================================
+       CLOSE MENU AFTER CLICK
+    ================================================== */
 
     navLinks.forEach(link => {
 
@@ -39,15 +47,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    /* =========================================
-       ACTIVE NAVIGATION
-    ========================================= */
+    /* ==================================================
+       ACTIVE NAV ITEM
+    ================================================== */
 
-    const sections =
-        document.querySelectorAll("main section[id]");
-
-
-    const updateNavigation = () => {
+    const updateActiveNavigation = () => {
 
         let currentSection = "home";
 
@@ -73,11 +77,10 @@ document.addEventListener("DOMContentLoaded", () => {
             link.classList.remove("active");
 
 
-            const href =
-                link.getAttribute("href");
-
-
-            if (href === `#${currentSection}`) {
+            if (
+                link.getAttribute("href") ===
+                `#${currentSection}`
+            ) {
 
                 link.classList.add("active");
 
@@ -90,17 +93,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.addEventListener(
         "scroll",
-        updateNavigation
+        updateActiveNavigation
     );
 
 
-    updateNavigation();
+    updateActiveNavigation();
 
 
-    /* =========================================
+    /* ==================================================
        FAQ
        ONLY ONE OPEN AT A TIME
-    ========================================= */
+    ================================================== */
 
     const faqItems =
         document.querySelectorAll(".faq details");
@@ -108,32 +111,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     faqItems.forEach(item => {
 
-        item.addEventListener(
-            "toggle",
-            () => {
+        item.addEventListener("toggle", () => {
 
-                if (item.open) {
+            if (!item.open) {
+                return;
+            }
 
-                    faqItems.forEach(
-                        otherItem => {
 
-                            if (
-                                otherItem !== item
-                            ) {
+            faqItems.forEach(otherItem => {
 
-                                otherItem.removeAttribute(
-                                    "open"
-                                );
+                if (otherItem !== item) {
 
-                            }
-
-                        }
+                    otherItem.removeAttribute(
+                        "open"
                     );
 
                 }
 
-            }
-        );
+            });
+
+        });
 
     });
 
