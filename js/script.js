@@ -12,11 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const sections =
         document.querySelectorAll("main section[id]");
 
-    const heroVideo =
-        document.querySelector(".hero-background-video");
 
-
-    /* MOBILE MENU */
+    /* =========================================
+       MOBILE MENU
+    ========================================= */
 
     if (menu && nav) {
 
@@ -29,7 +28,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* CLOSE MOBILE MENU */
+    /* =========================================
+       CLOSE MOBILE MENU AFTER CLICK
+    ========================================= */
 
     navLinks.forEach(link => {
 
@@ -46,7 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    /* ACTIVE NAVIGATION */
+    /* =========================================
+       ACTIVE NAVIGATION
+    ========================================= */
 
     const updateActiveNavigation = () => {
 
@@ -74,8 +77,12 @@ document.addEventListener("DOMContentLoaded", () => {
             link.classList.remove("active");
 
 
+            const href =
+                link.getAttribute("href");
+
+
             if (
-                link.getAttribute("href") ===
+                href ===
                 `#${currentSection}`
             ) {
 
@@ -97,7 +104,10 @@ document.addEventListener("DOMContentLoaded", () => {
     updateActiveNavigation();
 
 
-    /* FAQ */
+    /* =========================================
+       FAQ
+       ONLY ONE OPEN AT A TIME
+    ========================================= */
 
     const faqItems =
         document.querySelectorAll(".faq details");
@@ -105,55 +115,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
     faqItems.forEach(item => {
 
-        item.addEventListener("toggle", () => {
+        item.addEventListener(
+            "toggle",
+            () => {
 
-            if (!item.open) {
-                return;
-            }
-
-
-            faqItems.forEach(otherItem => {
-
-                if (otherItem !== item) {
-
-                    otherItem.removeAttribute(
-                        "open"
-                    );
-
+                if (!item.open) {
+                    return;
                 }
 
-            });
 
-        });
+                faqItems.forEach(otherItem => {
+
+                    if (
+                        otherItem !== item
+                    ) {
+
+                        otherItem.removeAttribute(
+                            "open"
+                        );
+
+                    }
+
+                });
+
+            }
+        );
 
     });
-
-
-    /* HERO VIDEO */
-
-    if (heroVideo) {
-
-        heroVideo.muted = true;
-
-
-        const playPromise =
-            heroVideo.play();
-
-
-        if (
-            playPromise !== undefined
-        ) {
-
-            playPromise.catch(() => {
-
-                console.log(
-                    "Video autoplay was blocked by the browser."
-                );
-
-            });
-
-        }
-
-    }
 
 });
