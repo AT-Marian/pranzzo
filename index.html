@@ -6,155 +6,191 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Pranzzo | Smarter Ordering. Better Hospitality.</title>
+    <title>
+        Pranzzo | Smarter Ordering. Better Hospitality.
+    </title>
 
     <meta name="description"
-        content="Pranzzo provides smarter QR ordering for restaurants, hotels and modern hospitality businesses.">
+        content="Pranzzo is a smart QR ordering solution for hotels, restaurants, cafés, resorts and hospitality businesses.">
 
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
         rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css">
 </head>
+
 
 <body>
 
 
-    <!-- NAVIGATION -->
+    <!-- ==================================================
+     NAVIGATION
+================================================== -->
 
     <header class="nav">
 
-        <a href="#home" class="navbar-brand">
+        <div class="nav-inner">
 
-            <span class="logo-circle">
-                <img src="assets/pranzzo-logo.png" alt="Pranzzo logo">
-            </span>
+            <a href="#home" class="brand" aria-label="Pranzzo Home">
 
-            <span class="brand-name">
-                PRANZZO
+                <div class="logo-circle">
 
-                <small>
-                    Smarter Ordering. Better Hospitality.
-                </small>
-            </span>
+                    <img src="assets/pranzzo-logo.png" alt="Pranzzo Logo">
 
-        </a>
+                </div>
 
+                <div class="brand-text">
 
-        <button class="menu" type="button" aria-label="Open navigation menu">
-            ☰
-        </button>
+                    <strong>PRANZZO</strong>
 
+                    <span>
+                        Smarter Ordering. Better Hospitality.
+                    </span>
 
-        <nav>
+                </div>
 
-            <a href="#home" class="active">
-                Home
             </a>
 
-            <a href="#how">
-                How It Works
+
+            <button class="menu" type="button" aria-label="Open navigation">
+                ☰
+            </button>
+
+
+            <nav>
+
+                <a href="#home" class="active">
+                    Home
+                </a>
+
+                <a href="#how">
+                    How It Works
+                </a>
+
+                <a href="#solutions">
+                    Solutions
+                </a>
+
+                <a href="#benefits">
+                    Benefits
+                </a>
+
+                <a href="#hotels">
+                    For Hotels
+                </a>
+
+                <a href="#restaurants">
+                    For Restaurants
+                </a>
+
+                <a href="#faq">
+                    FAQ
+                </a>
+
+                <a href="#demo">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <a href="#demo" class="nav-demo">
+                Request a Demo
+                <span>→</span>
             </a>
 
-            <a href="#solutions">
-                Solutions
-            </a>
-
-            <a href="#benefits">
-                Benefits
-            </a>
-
-            <a href="#hotels">
-                For Hotels
-            </a>
-
-            <a href="#restaurants">
-                For Restaurants
-            </a>
-
-            <a href="#faq">
-                FAQ
-            </a>
-
-            <a href="#contact">
-                Contact
-            </a>
-
-        </nav>
-
-
-        <a class="orange-button nav-demo" href="#demo">
-            Request a Demo
-            <span>→</span>
-        </a>
+        </div>
 
     </header>
+
 
 
     <main>
 
 
-        <!-- =====================================================
-     HERO WITH VIDEO
-===================================================== -->
+        <!-- ==================================================
+     HERO — VIDEO BACKGROUND
+================================================== -->
 
         <section class="hero-video" id="home">
 
+            <!-- Background Video -->
+
             <video class="hero-background-video" autoplay muted loop playsinline preload="auto">
 
-                <source src="assets/videos/pranzzo-hero.mp4" type="video/mp4">
+                <source src="/videos/pranzzo-hero.mp4" type="video/mp4">
+
+                Your browser does not support HTML5 video.
 
             </video>
 
 
+            <!-- Dark overlay -->
+
             <div class="hero-video-overlay"></div>
 
 
+            <!-- Hero content -->
+
             <div class="hero-video-content">
 
-                <div class="hero-pill">
+
+                <div class="hero-badge">
+
                     ✦ Built for modern hospitality
+
                 </div>
 
 
-                <p class="section-label">
+                <div class="hero-eyebrow">
+
                     QR ORDERING • KITCHEN CONNECTION • DIGITAL PAYMENTS
-                </p>
+
+                </div>
 
 
                 <h1>
+
                     The smarter way to
 
                     <span>
                         order, serve & grow.
                     </span>
+
                 </h1>
 
 
                 <p class="hero-description">
-                    Pranzzo turns restaurant tables and hotel rooms into
-                    convenient digital ordering points — helping guests order
-                    faster while your team delivers a smoother service.
+
+                    Pranzzo turns restaurant tables and hotel rooms
+                    into convenient digital ordering points — helping
+                    guests order faster while your team delivers a
+                    smoother service.
+
                 </p>
 
 
-                <div class="hero-buttons">
+                <div class="hero-actions">
 
-                    <a class="orange-button large" href="#demo">
+                    <a href="#demo" class="btn btn-primary">
+
                         Request a Demo
+
                         <span>→</span>
+
                     </a>
 
 
-                    <a class="outline-button" href="#how">
+                    <a href="#how" class="btn btn-outline">
 
-                        <span class="play-circle">
+                        <span class="play-icon">
                             ▶
                         </span>
 
@@ -165,79 +201,77 @@
                 </div>
 
 
-                <div class="hero-points">
+                <div class="hero-features">
 
-                    <div>
-                        <span>✓</span>
-                        No App Required
-                    </div>
+                    <span>
+                        ✓ No App Required
+                    </span>
 
-                    <div>
-                        <span>✓</span>
-                        Faster Service
-                    </div>
+                    <span>
+                        ✓ Faster Service
+                    </span>
 
-                    <div>
-                        <span>✓</span>
-                        Digital Payments
-                    </div>
+                    <span>
+                        ✓ Digital Payments
+                    </span>
 
                 </div>
 
             </div>
 
 
+            <!-- Small brand card -->
+
             <div class="hero-video-brand">
 
-                <span class="logo-circle hero-logo-circle">
-
-                    <img src="assets/pranzzo-logo.png" alt="Pranzzo">
-
-                </span>
-
+                <img src="assets/pranzzo-logo.png" alt="Pranzzo">
 
                 <div>
 
                     <small>
-                        PRANZZO
+                        MODERN HOSPITALITY
                     </small>
 
                     <strong>
                         Scan. Order. Enjoy.
                     </strong>
 
+                    <span>
+                        A smoother way to serve.
+                    </span>
+
                 </div>
 
             </div>
 
 
-            <a href="#how" class="scroll-indicator" aria-label="Scroll to How It Works">
-
+            <a href="#how" class="scroll-indicator" aria-label="Scroll down">
                 <span></span>
-
             </a>
 
         </section>
 
 
-        <!-- =====================================================
-     HOW IT WORKS — CREAM
-===================================================== -->
 
-        <section class="how-section light-section" id="how">
+        <!-- ==================================================
+     HOW IT WORKS
+================================================== -->
 
-            <div class="section-heading center">
+        <section class="how section" id="how">
 
-                <p class="section-label">
-                    HOW IT WORKS
-                </p>
+            <div class="section-heading">
+
+                <span class="section-label">
+                    SIMPLE. FAST. SMART.
+                </span>
 
                 <h2>
-                    From scan to service — without the wait.
+                    How Pranzzo Works
                 </h2>
 
-                <p class="section-subtitle">
-                    A simple journey from your guest's phone to your kitchen.
+                <p>
+                    A simple ordering journey designed for
+                    customers, kitchens and hospitality teams.
                 </p>
 
             </div>
@@ -248,16 +282,16 @@
 
                 <!-- STEP 1 -->
 
-                <article class="flow-step">
+                <div class="flow-step">
 
-                    <div class="step-image">
+                    <div class="step-circle">
+
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=600&q=80"
+                            alt="Scanning QR code">
 
                         <span class="step-number">
-                            1
+                            01
                         </span>
-
-                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=85"
-                            alt="Scan QR code">
 
                     </div>
 
@@ -266,25 +300,22 @@
                     </h3>
 
                     <p>
-                        Guests scan the table or room QR code with their phone.
+                        Guests scan the QR code from their
+                        table or hotel room.
                     </p>
 
-                </article>
+                </div>
 
 
-                <!-- ARROW 1 -->
+                <!-- ARROW -->
 
                 <div class="flow-arrow arrow-low">
 
-                    <svg viewBox="0 0 180 120" aria-hidden="true">
+                    <svg viewBox="0 0 180 120">
 
-                        <path class="flow-curve" d="M5 35
-                       C45 35, 45 90, 90 90
-                       C130 90, 135 55, 166 55" />
+                        <path class="flow-curve" d="M5 35 C45 35, 45 90, 90 90 C130 90, 135 55, 166 55" />
 
-                        <path class="flow-head" d="M153 43
-                       L168 55
-                       L153 67" />
+                        <path class="flow-head" d="M153 43 L168 55 L153 67" />
 
                     </svg>
 
@@ -293,16 +324,16 @@
 
                 <!-- STEP 2 -->
 
-                <article class="flow-step lower-step">
+                <div class="flow-step lower-step">
 
-                    <div class="step-image">
+                    <div class="step-circle">
 
-                        <span class="step-number dark-number">
-                            2
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80"
+                            alt="Digital menu">
+
+                        <span class="step-number">
+                            02
                         </span>
-
-                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=85"
-                            alt="Browse menu">
 
                     </div>
 
@@ -311,25 +342,22 @@
                     </h3>
 
                     <p>
-                        The digital menu opens instantly with photos and specials.
+                        Guests instantly browse your digital
+                        menu from their own phone.
                     </p>
 
-                </article>
+                </div>
 
 
-                <!-- ARROW 2 -->
+                <!-- ARROW -->
 
                 <div class="flow-arrow arrow-high">
 
-                    <svg viewBox="0 0 180 120" aria-hidden="true">
+                    <svg viewBox="0 0 180 120">
 
-                        <path class="flow-curve" d="M5 82
-                       C45 82, 45 30, 90 30
-                       C130 30, 135 63, 166 63" />
+                        <path class="flow-curve" d="M5 82 C45 82, 45 30, 90 30 C130 30, 135 63, 166 63" />
 
-                        <path class="flow-head" d="M153 51
-                       L168 63
-                       L153 75" />
+                        <path class="flow-head" d="M153 51 L168 63 L153 75" />
 
                     </svg>
 
@@ -338,43 +366,40 @@
 
                 <!-- STEP 3 -->
 
-                <article class="flow-step">
+                <div class="flow-step">
 
-                    <div class="step-image">
+                    <div class="step-circle">
+
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80"
+                            alt="Ordering food">
 
                         <span class="step-number">
-                            3
+                            03
                         </span>
-
-                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=85"
-                            alt="Order and pay">
 
                     </div>
 
                     <h3>
-                        Order & Pay
+                        Order
                     </h3>
 
                     <p>
-                        Guests customize dishes, place their order and pay digitally.
+                        Customers choose their items and place
+                        an order in a few taps.
                     </p>
 
-                </article>
+                </div>
 
 
-                <!-- ARROW 3 -->
+                <!-- ARROW -->
 
                 <div class="flow-arrow arrow-low">
 
-                    <svg viewBox="0 0 180 120" aria-hidden="true">
+                    <svg viewBox="0 0 180 120">
 
-                        <path class="flow-curve" d="M5 35
-                       C45 35, 45 90, 90 90
-                       C130 90, 135 55, 166 55" />
+                        <path class="flow-curve" d="M5 35 C45 35, 45 90, 90 90 C130 90, 135 55, 166 55" />
 
-                        <path class="flow-head" d="M153 43
-                       L168 55
-                       L153 67" />
+                        <path class="flow-head" d="M153 43 L168 55 L153 67" />
 
                     </svg>
 
@@ -383,16 +408,16 @@
 
                 <!-- STEP 4 -->
 
-                <article class="flow-step lower-step">
+                <div class="flow-step lower-step">
 
-                    <div class="step-image">
+                    <div class="step-circle">
 
-                        <span class="step-number dark-number">
-                            4
+                        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=600&q=80"
+                            alt="Kitchen">
+
+                        <span class="step-number">
+                            04
                         </span>
-
-                        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=800&q=85"
-                            alt="Prepare food">
 
                     </div>
 
@@ -401,25 +426,22 @@
                     </h3>
 
                     <p>
-                        The kitchen receives the order instantly for preparation.
+                        Orders reach the kitchen or POS so
+                        preparation can begin immediately.
                     </p>
 
-                </article>
+                </div>
 
 
-                <!-- ARROW 4 -->
+                <!-- ARROW -->
 
                 <div class="flow-arrow arrow-high">
 
-                    <svg viewBox="0 0 180 120" aria-hidden="true">
+                    <svg viewBox="0 0 180 120">
 
-                        <path class="flow-curve" d="M5 82
-                       C45 82, 45 30, 90 30
-                       C130 30, 135 63, 166 63" />
+                        <path class="flow-curve" d="M5 82 C45 82, 45 30, 90 30 C130 30, 135 63, 166 63" />
 
-                        <path class="flow-head" d="M153 51
-                       L168 63
-                       L153 75" />
+                        <path class="flow-head" d="M153 51 L168 63 L153 75" />
 
                     </svg>
 
@@ -428,16 +450,16 @@
 
                 <!-- STEP 5 -->
 
-                <article class="flow-step">
+                <div class="flow-step">
 
-                    <div class="step-image">
+                    <div class="step-circle">
+
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
+                            alt="Serving food">
 
                         <span class="step-number">
-                            5
+                            05
                         </span>
-
-                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=85"
-                            alt="Serve food">
 
                     </div>
 
@@ -446,38 +468,9 @@
                     </h3>
 
                     <p>
-                        Staff receive ready alerts and serve fresh meals to guests.
+                        The completed order is served directly
+                        to the table or hotel room.
                     </p>
-
-                </article>
-
-            </div>
-
-
-            <div class="flow-bottom">
-
-                <a class="orange-button" href="#demo">
-                    Request a Demo
-                    <span>→</span>
-                </a>
-
-
-                <div class="flow-benefits">
-
-                    <span>
-                        <b>✓</b>
-                        No App Required
-                    </span>
-
-                    <span>
-                        <b>✓</b>
-                        Faster Service
-                    </span>
-
-                    <span>
-                        <b>✓</b>
-                        Digital Payments
-                    </span>
 
                 </div>
 
@@ -486,257 +479,465 @@
         </section>
 
 
-        <!-- =====================================================
-     SOLUTIONS — BLACK
-===================================================== -->
 
-        <section class="solutions dark-section" id="solutions">
+        <!-- ==================================================
+     SOLUTIONS
+================================================== -->
+
+        <section class="solutions section dark-section" id="solutions">
+
+            <div class="solutions-overlay"></div>
+
+
+            <div class="section-content">
+
+                <div class="section-heading light">
+
+                    <span class="section-label">
+                        BUILT FOR HOSPITALITY
+                    </span>
+
+                    <h2>
+                        One Platform. Multiple Businesses.
+                    </h2>
+
+                    <p>
+                        Pranzzo creates a smarter ordering experience
+                        across different hospitality environments.
+                    </p>
+
+                </div>
+
+
+                <div class="solution-grid">
+
+
+                    <article class="solution-card">
+
+                        <span class="solution-icon">
+                            🏨
+                        </span>
+
+                        <h3>
+                            Hotels
+                        </h3>
+
+                        <p>
+                            Let guests order directly from
+                            their hotel rooms.
+                        </p>
+
+                    </article>
+
+
+                    <article class="solution-card">
+
+                        <span class="solution-icon">
+                            🍽️
+                        </span>
+
+                        <h3>
+                            Restaurants
+                        </h3>
+
+                        <p>
+                            Turn every restaurant table into
+                            a digital ordering point.
+                        </p>
+
+                    </article>
+
+
+                    <article class="solution-card">
+
+                        <span class="solution-icon">
+                            ☕
+                        </span>
+
+                        <h3>
+                            Cafés
+                        </h3>
+
+                        <p>
+                            Speed up ordering during
+                            busy service hours.
+                        </p>
+
+                    </article>
+
+
+                    <article class="solution-card">
+
+                        <span class="solution-icon">
+                            🌴
+                        </span>
+
+                        <h3>
+                            Resorts
+                        </h3>
+
+                        <p>
+                            Provide easier ordering across
+                            rooms and guest areas.
+                        </p>
+
+                    </article>
+
+
+                    <article class="solution-card">
+
+                        <span class="solution-icon">
+                            🛎️
+                        </span>
+
+                        <h3>
+                            Guest Houses
+                        </h3>
+
+                        <p>
+                            Give smaller hospitality businesses
+                            a modern ordering solution.
+                        </p>
+
+                    </article>
+
+
+                    <article class="solution-card">
+
+                        <span class="solution-icon">
+                            🏢
+                        </span>
+
+                        <h3>
+                            Hospitality Chains
+                        </h3>
+
+                        <p>
+                            Deliver a consistent digital experience
+                            across multiple locations.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+     BENEFITS
+================================================== -->
+
+        <section class="benefits section" id="benefits">
 
             <div class="section-heading">
 
-                <p class="section-label">
-                    SOLUTIONS
-                </p>
-
-                <h2>
-                    Built for every modern hospitality experience.
-                </h2>
-
-                <p class="section-subtitle dark-subtitle">
-                    One digital ordering experience designed for different
-                    hospitality businesses.
-                </p>
-
-            </div>
-
-
-            <div class="solution-grid">
-
-                <article>
-                    <span>🏨</span>
-                    <h3>Hotels</h3>
-                    <p>Modern room ordering without repeated phone calls.</p>
-                </article>
-
-                <article>
-                    <span>🍽</span>
-                    <h3>Restaurants</h3>
-                    <p>Smarter table service with quicker ordering.</p>
-                </article>
-
-                <article>
-                    <span>☕</span>
-                    <h3>Cafés</h3>
-                    <p>Quick ordering for busy customer service.</p>
-                </article>
-
-                <article>
-                    <span>🌴</span>
-                    <h3>Resorts</h3>
-                    <p>Connect rooms, restaurants and service points.</p>
-                </article>
-
-                <article>
-                    <span>🏠</span>
-                    <h3>Guest Houses</h3>
-                    <p>Introduce digital service with a simple setup.</p>
-                </article>
-
-                <article>
-                    <span>👑</span>
-                    <h3>Hospitality Chains</h3>
-                    <p>Deliver a consistent experience across locations.</p>
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-     BENEFITS — CREAM
-===================================================== -->
-
-        <section class="benefits-section light-section" id="benefits">
-
-            <div class="section-heading center">
-
-                <p class="section-label">
+                <span class="section-label">
                     WHY PRANZZO
-                </p>
+                </span>
 
                 <h2>
-                    Better service for guests.
-                    Better control for your team.
-                </h2>
-
-            </div>
-
-
-            <div class="benefits-grid">
-
-                <article>
-                    <span>⚡</span>
-                    <h3>Faster Service</h3>
-                    <p>Reduce waiting and help guests place orders quickly.</p>
-                </article>
-
-                <article>
-                    <span>✓</span>
-                    <h3>Fewer Errors</h3>
-                    <p>Digital orders reduce unnecessary communication mistakes.</p>
-                </article>
-
-                <article>
-                    <span>💳</span>
-                    <h3>Easy Payments</h3>
-                    <p>Give guests a smoother digital payment experience.</p>
-                </article>
-
-                <article>
-                    <span>👨‍🍳</span>
-                    <h3>Kitchen Connection</h3>
-                    <p>Send requests directly into your preparation workflow.</p>
-                </article>
-
-                <article>
-                    <span>📈</span>
-                    <h3>Higher Efficiency</h3>
-                    <p>Build a smoother workflow for your hospitality team.</p>
-                </article>
-
-                <article>
-                    <span>😊</span>
-                    <h3>Happier Guests</h3>
-                    <p>Give customers a simple and modern ordering journey.</p>
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-     HOTELS — BLACK
-===================================================== -->
-
-        <section class="split-section dark-split" id="hotels">
-
-            <div class="split-photo hotel-photo"></div>
-
-
-            <div class="split-copy dark-copy">
-
-                <p class="section-label">
-                    FOR HOTELS
-                </p>
-
-                <h2>
-                    Turn every room into a smarter ordering point.
+                    Better Service Starts With Better Ordering
                 </h2>
 
                 <p>
-                    Guests scan the room QR, browse the menu, order and pay
-                    directly from their phone.
+                    Simplify ordering for your guests and
+                    make everyday operations easier for your team.
                 </p>
 
-
-                <ul>
-
-                    <li>Less waiting on room-service calls</li>
-                    <li>Instant kitchen/POS order flow</li>
-                    <li>Better staff communication</li>
-                    <li>Convenient digital payments</li>
-
-                </ul>
+            </div>
 
 
-                <a class="orange-button" href="#demo">
-                    Request a Hotel Demo
-                    <span>→</span>
-                </a>
+            <div class="benefit-grid">
+
+
+                <article class="benefit-card">
+
+                    <span>
+                        ⚡
+                    </span>
+
+                    <h3>
+                        Faster Service
+                    </h3>
+
+                    <p>
+                        Orders reach your team instantly,
+                        helping reduce customer waiting time.
+                    </p>
+
+                </article>
+
+
+                <article class="benefit-card">
+
+                    <span>
+                        ✓
+                    </span>
+
+                    <h3>
+                        Fewer Errors
+                    </h3>
+
+                    <p>
+                        Digital orders reduce manual mistakes
+                        and misunderstandings.
+                    </p>
+
+                </article>
+
+
+                <article class="benefit-card">
+
+                    <span>
+                        💳
+                    </span>
+
+                    <h3>
+                        Easy Payments
+                    </h3>
+
+                    <p>
+                        Give guests a more convenient
+                        digital payment experience.
+                    </p>
+
+                </article>
+
+
+                <article class="benefit-card">
+
+                    <span>
+                        👨‍🍳
+                    </span>
+
+                    <h3>
+                        Kitchen Connection
+                    </h3>
+
+                    <p>
+                        Orders can move directly into
+                        your kitchen workflow.
+                    </p>
+
+                </article>
+
+
+                <article class="benefit-card">
+
+                    <span>
+                        📈
+                    </span>
+
+                    <h3>
+                        Higher Efficiency
+                    </h3>
+
+                    <p>
+                        Reduce repetitive work and allow
+                        staff to focus on service.
+                    </p>
+
+                </article>
+
+
+                <article class="benefit-card">
+
+                    <span>
+                        😊
+                    </span>
+
+                    <h3>
+                        Happier Guests
+                    </h3>
+
+                    <p>
+                        Deliver a smooth and convenient
+                        experience from the guest's phone.
+                    </p>
+
+                </article>
 
             </div>
 
         </section>
 
 
-        <!-- =====================================================
-     RESTAURANTS — CREAM
-===================================================== -->
 
-        <section class="split-section light-split" id="restaurants">
+        <!-- ==================================================
+     HOTELS
+================================================== -->
 
-            <div class="split-copy light-copy">
+        <section class="hotel-section" id="hotels">
 
-                <p class="section-label">
-                    FOR RESTAURANTS
-                </p>
+            <div class="split-layout">
+
+
+                <div class="split-image">
+
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1400&q=85"
+                        alt="Luxury hotel">
+
+                </div>
+
+
+                <div class="split-content dark-content">
+
+                    <span class="section-label">
+                        PRANZZO FOR HOTELS
+                    </span>
+
+                    <h2>
+                        Turn every room into a smarter ordering point.
+                    </h2>
+
+                    <p>
+                        Place a Pranzzo QR code inside each room.
+                        Guests can browse your menu and order without
+                        calling room service.
+                    </p>
+
+
+                    <div class="feature-list">
+
+                        <div>
+                            ✓ QR ordering from hotel rooms
+                        </div>
+
+                        <div>
+                            ✓ Orders sent to the kitchen or POS
+                        </div>
+
+                        <div>
+                            ✓ Faster room service
+                        </div>
+
+                        <div>
+                            ✓ Digital payments
+                        </div>
+
+                    </div>
+
+
+                    <a href="#demo" class="btn btn-primary">
+                        Request a Hotel Demo
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+     RESTAURANTS
+================================================== -->
+
+        <section class="restaurant-section" id="restaurants">
+
+            <div class="split-layout reverse">
+
+
+                <div class="split-image">
+
+                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1400&q=85"
+                        alt="Modern restaurant">
+
+                </div>
+
+
+                <div class="split-content light-content">
+
+                    <span class="section-label">
+                        PRANZZO FOR RESTAURANTS
+                    </span>
+
+                    <h2>
+                        Make every table smarter.
+                    </h2>
+
+                    <p>
+                        Customers simply scan the QR code,
+                        browse the menu and place their order
+                        directly from their phone.
+                    </p>
+
+
+                    <div class="feature-list">
+
+                        <div>
+                            ✓ No app download required
+                        </div>
+
+                        <div>
+                            ✓ Digital table ordering
+                        </div>
+
+                        <div>
+                            ✓ Faster kitchen communication
+                        </div>
+
+                        <div>
+                            ✓ Reduced waiting time
+                        </div>
+
+                    </div>
+
+
+                    <a href="#demo" class="btn btn-primary">
+                        Request a Restaurant Demo
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+     FAQ
+================================================== -->
+
+        <section class="faq section dark-section" id="faq">
+
+            <div class="section-heading light">
+
+                <span class="section-label">
+                    QUESTIONS & ANSWERS
+                </span>
 
                 <h2>
-                    Make every table smarter.
+                    Frequently Asked Questions
                 </h2>
 
                 <p>
-                    Guests scan, browse, order and pay from their table while
-                    requests move quickly to your kitchen workflow.
+                    Learn more about how Pranzzo works
+                    for your hospitality business.
                 </p>
-
-
-                <ul>
-
-                    <li>Faster table service</li>
-                    <li>Reduced waiting time</li>
-                    <li>Fewer ordering mistakes</li>
-                    <li>Faster kitchen communication</li>
-                    <li>Better customer experience</li>
-
-                </ul>
-
-
-                <a class="orange-button" href="#demo">
-                    Request a Restaurant Demo
-                    <span>→</span>
-                </a>
 
             </div>
 
 
-            <div class="split-photo restaurant-photo"></div>
-
-        </section>
+            <div class="faq-list">
 
 
-        <!-- =====================================================
-     FAQ — BLACK
-===================================================== -->
-
-        <section class="faq-section dark-section" id="faq">
-
-            <div class="section-heading center">
-
-                <p class="section-label">
-                    FAQ
-                </p>
-
-                <h2>
-                    Questions, answered.
-                </h2>
-
-            </div>
-
-
-            <div class="faq">
-
-                <details>
+                <details open>
 
                     <summary>
                         Do customers need to install an app?
                     </summary>
 
                     <p>
-                        No. Guests simply scan the QR code and access the
-                        ordering experience through their phone browser.
+                        No. Guests simply scan the QR code
+                        and access the menu through their
+                        phone's browser.
                     </p>
 
                 </details>
@@ -749,8 +950,9 @@
                     </summary>
 
                     <p>
-                        Yes. A QR can be placed inside hotel rooms so guests
-                        can browse, order and pay without calling room service.
+                        Yes. Hotels can place a QR code inside
+                        each room so guests can order food and
+                        beverages directly.
                     </p>
 
                 </details>
@@ -763,8 +965,8 @@
                     </summary>
 
                     <p>
-                        Orders are designed to move into the restaurant or
-                        hotel's kitchen and POS workflow.
+                        Orders can be connected to the hotel's
+                        or restaurant's kitchen and POS workflow.
                     </p>
 
                 </details>
@@ -773,12 +975,13 @@
                 <details>
 
                     <summary>
-                        Can restaurants use it at tables?
+                        Can restaurants use Pranzzo at tables?
                     </summary>
 
                     <p>
-                        Yes. QR codes can be placed at individual tables for
-                        faster and more convenient ordering.
+                        Yes. Each table can have a QR code
+                        allowing customers to order directly
+                        from their phone.
                     </p>
 
                 </details>
@@ -788,234 +991,274 @@
         </section>
 
 
-        <!-- =====================================================
-     REQUEST DEMO — CREAM
-===================================================== -->
 
-        <section class="demo-section light-section" id="demo">
+        <!-- ==================================================
+     REQUEST DEMO
+================================================== -->
 
-            <div class="demo-copy">
+        <section class="demo section" id="demo">
 
-                <p class="section-label">
-                    REQUEST A DEMO
-                </p>
+            <div class="demo-layout">
 
 
-                <h2>
-                    See how Pranzzo can fit your hospitality business.
-                </h2>
+                <div class="demo-intro">
+
+                    <span class="section-label">
+                        SEE PRANZZO IN ACTION
+                    </span>
+
+                    <h2>
+                        Request a Demo
+                    </h2>
+
+                    <p>
+                        Tell us about your business and
+                        our team will contact you to arrange
+                        a Pranzzo demonstration.
+                    </p>
 
 
-                <p>
-                    Tell us about your restaurant, hotel or hospitality
-                    business and we'll help you explore the right digital
-                    ordering experience.
-                </p>
+                    <div class="demo-points">
 
+                        <div>
+                            ✓ See the complete ordering journey
+                        </div>
 
-                <div class="demo-benefits">
+                        <div>
+                            ✓ Understand how Pranzzo fits your business
+                        </div>
 
-                    <span>✓ No App Required</span>
-                    <span>✓ Easy Setup</span>
-                    <span>✓ Built for Hospitality</span>
+                        <div>
+                            ✓ Explore hotel and restaurant use cases
+                        </div>
+
+                    </div>
 
                 </div>
+
+
+                <form class="demo-form" action="https://formsubmit.co/atmarian200114@gmail.com" method="POST">
+
+                    <input type="hidden" name="_subject" value="New Pranzzo Demo Request">
+
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <input type="hidden" name="_template" value="table">
+
+
+                    <div class="form-row">
+
+
+                        <div class="form-group">
+
+                            <label for="business-name">
+                                Business Name
+                            </label>
+
+                            <input id="business-name" type="text" name="Business Name" placeholder="Your business name"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="client-name">
+                                Your Name
+                            </label>
+
+                            <input id="client-name" type="text" name="Client Name" placeholder="Your name" required>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input id="email" type="email" name="Client Email" placeholder="name@company.com" required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Phone Number
+                            </label>
+
+                            <input id="phone" type="tel" name="Phone" placeholder="+94" required>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+
+                        <div class="form-group">
+
+                            <label for="business-type">
+                                Business Type
+                            </label>
+
+                            <select id="business-type" name="Business Type" required>
+
+                                <option value="">
+                                    Select business type
+                                </option>
+
+                                <option value="Hotel">
+                                    Hotel
+                                </option>
+
+                                <option value="Restaurant">
+                                    Restaurant
+                                </option>
+
+                                <option value="Cafe">
+                                    Café
+                                </option>
+
+                                <option value="Resort">
+                                    Resort
+                                </option>
+
+                                <option value="Guest House">
+                                    Guest House
+                                </option>
+
+                                <option value="Hospitality Chain">
+                                    Hospitality Chain
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="meeting-type">
+                                Preferred Meeting
+                            </label>
+
+                            <select id="meeting-type" name="Meeting Type" required>
+
+                                <option value="">
+                                    Select meeting type
+                                </option>
+
+                                <option value="Google Meet">
+                                    Google Meet
+                                </option>
+
+                                <option value="Phone Call">
+                                    Phone Call
+                                </option>
+
+                                <option value="In Person">
+                                    In Person
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea id="message" name="Message" rows="5"
+                            placeholder="Tell us anything you'd like us to know..."></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary form-submit">
+                        Request My Demo
+                    </button>
+
+                </form>
 
             </div>
-
-
-            <form action="https://formsubmit.co/atmarian200114@gmail.com" method="POST">
-
-                <input type="hidden" name="_subject" value="New Pranzzo Demo Request">
-
-                <input type="hidden" name="_captcha" value="false">
-
-                <input type="hidden" name="_template" value="table">
-
-
-                <div class="form-grid">
-
-                    <input name="Business Name" placeholder="Restaurant / Hotel Name" required>
-
-                    <input name="Client Name" placeholder="Your Name" required>
-
-                    <input type="email" name="Client Email" placeholder="Email Address" required>
-
-                    <input name="Phone" placeholder="Phone Number" required>
-
-
-                    <select name="Business Type" required>
-
-                        <option value="">
-                            Business Type
-                        </option>
-
-                        <option>Hotel</option>
-                        <option>Restaurant</option>
-                        <option>Café</option>
-                        <option>Resort</option>
-                        <option>Guest House</option>
-                        <option>Hospitality Chain</option>
-
-                    </select>
-
-
-                    <select name="Meeting Type">
-
-                        <option>
-                            Online Meeting
-                        </option>
-
-                        <option>
-                            Physical Meeting
-                        </option>
-
-                    </select>
-
-
-                    <textarea name="Message" placeholder="Tell us a little about your business"></textarea>
-
-                </div>
-
-
-                <button class="orange-button submit" type="submit">
-                    Request My Demo
-                    <span>→</span>
-                </button>
-
-
-                <p class="form-note">
-                    Your demo request will be sent directly to our team.
-                </p>
-
-            </form>
 
         </section>
 
 
-        <!-- =====================================================
-     GET STARTED — BLACK
-===================================================== -->
 
-        <section class="smart-cta dark-section" id="contact">
+        <!-- ==================================================
+     FINAL CTA
+================================================== -->
 
-            <div class="smart-copy">
+        <section class="get-started">
 
-                <p class="section-label">
-                    GET STARTED TODAY
-                </p>
+            <div class="smart-layout">
 
 
-                <h2>
-                    Ready to serve
+                <div class="smart-content">
 
-                    <span>
-                        smarter?
+                    <span class="section-label">
+                        READY TO GET STARTED?
                     </span>
-                </h2>
+
+                    <h2>
+                        Give your guests a smarter way to order.
+                    </h2>
+
+                    <p>
+                        Bring faster ordering and smoother service
+                        to your hotel, restaurant or hospitality
+                        business with Pranzzo.
+                    </p>
 
 
-                <p class="smart-description">
-                    Transform your hospitality ordering with a seamless,
-                    modern guest experience.
-                </p>
-
-
-                <div class="smart-features">
-
-                    <div>
-
-                        <span>⚡</span>
-
-                        <p>
-                            <strong>
-                                Faster Service
-                            </strong>
-
-                            Reduce waiting and serve guests faster.
-                        </p>
-
-                    </div>
-
-
-                    <div>
-
-                        <span>◉</span>
-
-                        <p>
-                            <strong>
-                                Higher Efficiency
-                            </strong>
-
-                            Streamline ordering and kitchen communication.
-                        </p>
-
-                    </div>
-
-
-                    <div>
-
-                        <span>✦</span>
-
-                        <p>
-                            <strong>
-                                Modern Experience
-                            </strong>
-
-                            Give guests a smoother digital ordering journey.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="smart-buttons">
-
-                    <a class="orange-button" href="#demo">
+                    <a href="#demo" class="btn btn-primary">
                         Request a Demo
-                        <span>→</span>
-                    </a>
-
-
-                    <a class="outline-button" href="#how">
-
-                        <span class="play-circle">
-                            ▶
-                        </span>
-
-                        See How It Works
-
                     </a>
 
                 </div>
 
-            </div>
+
+                <div class="smart-photo">
+
+                    <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1400&q=85"
+                        alt="Restaurant dining experience">
 
 
-            <div class="smart-photo">
-
-                <div class="smart-photo-shade"></div>
-
-
-                <div class="smart-logo-card">
-
-                    <span class="logo-circle large-logo-circle">
+                    <div class="smart-brand-card">
 
                         <img src="assets/pranzzo-logo.png" alt="Pranzzo">
 
-                    </span>
 
+                        <div>
 
-                    <div>
+                            <strong>
+                                PRANZZO
+                            </strong>
 
-                        <small>
-                            PRANZZO
-                        </small>
+                            <span>
+                                Built for modern hospitality.
+                            </span>
 
-                        <strong>
-                            Built for modern hospitality.
-                        </strong>
+                        </div>
 
                     </div>
 
@@ -1029,57 +1272,107 @@
     </main>
 
 
-    <!-- FOOTER -->
+
+    <!-- ==================================================
+     FOOTER
+================================================== -->
 
     <footer>
 
-        <div class="footer-logo">
-
-            <span class="logo-circle footer-circle">
-
-                <img src="assets/pranzzo-logo.png" alt="Pranzzo">
-
-            </span>
+        <div class="footer-inner">
 
 
-            <div>
+            <div class="footer-brand">
 
-                <strong>
-                    PRANZZO
-                </strong>
+                <div class="logo-circle">
 
-                <small>
-                    Smarter Ordering. Better Hospitality.
-                </small>
+                    <img src="assets/pranzzo-logo.png" alt="Pranzzo">
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        PRANZZO
+                    </strong>
+
+                    <p>
+                        Smarter Ordering. Better Hospitality.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#how">
+                    How It Works
+                </a>
+
+                <a href="#solutions">
+                    Solutions
+                </a>
+
+                <a href="#benefits">
+                    Benefits
+                </a>
+
+                <a href="#hotels">
+                    Hotels
+                </a>
+
+                <a href="#restaurants">
+                    Restaurants
+                </a>
+
+                <a href="#faq">
+                    FAQ
+                </a>
+
+                <a href="#demo">
+                    Request a Demo
+                </a>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Pranzzo. All rights reserved.
+                </p>
 
             </div>
 
         </div>
 
-
-        <p>
-            QR ordering for modern restaurants, hotels and
-            hospitality businesses.
-        </p>
-
-
-        <small>
-            © 2026 Pranzzo. All rights reserved.
-        </small>
-
     </footer>
 
 
-    <!-- WHATSAPP -->
+
+    <!-- ==================================================
+     WHATSAPP
+================================================== -->
 
     <a class="chat"
         href="https://wa.me/94724334484?text=Hi%20Pranzzo%2C%20I%20would%20like%20to%20know%20more%20about%20your%20QR%20ordering%20solution."
         target="_blank" rel="noopener noreferrer">
+
         💬 Chat with us
+
     </a>
 
 
+
+    <!-- ==================================================
+     JAVASCRIPT
+================================================== -->
+
     <script src="js/script.js"></script>
+
 
 </body>
 
