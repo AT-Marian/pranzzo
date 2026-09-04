@@ -9,9 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (menu && nav) {
 
         menu.addEventListener("click", () => {
-
             nav.classList.toggle("open");
-
         });
 
     }
@@ -32,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    /* FAQ - ONLY ONE OPEN AT A TIME */
+    /* FAQ - KEEP ONLY ONE OPEN */
 
     const faqItems = document.querySelectorAll(".faq details");
 
