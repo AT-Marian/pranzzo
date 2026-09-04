@@ -748,7 +748,8 @@ section {
 
 
 /* ===============================
-   DEMO FORM
+   DEMO SECTION
+   WARM CHARCOAL / BROWN
 ================================ */
 
 .demo-section {
@@ -756,9 +757,21 @@ section {
     grid-template-columns: 0.8fr 1.2fr;
     gap: 70px;
     align-items: center;
+
     padding: 100px 7%;
-    background: #09262c;
+
+    background:
+        radial-gradient(circle at 20% 20%,
+            rgba(255, 102, 28, 0.08),
+            transparent 30%),
+        linear-gradient(135deg,
+            #171310 0%,
+            #221914 48%,
+            #130f0d 100%);
+
     color: white;
+
+    border-bottom: 1px solid rgba(255, 111, 30, 0.12);
 }
 
 .demo-copy h2 {
@@ -768,15 +781,22 @@ section {
 }
 
 .demo-copy>p:not(.eyebrow) {
-    color: #a9b8b6;
+    color: #c1b6ae;
     line-height: 1.7;
+}
+
+.demo-section .eyebrow {
+    color: #ff6a1a;
 }
 
 form {
     padding: 32px;
     border-radius: 22px;
     background: white;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+
+    box-shadow:
+        0 25px 65px rgba(0, 0, 0, 0.34),
+        0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
 .form-grid {
@@ -823,13 +843,25 @@ form {
 
 
 /* ===============================
-   NEW SMART CTA
+   GET STARTED CTA
+   PREMIUM TEAL
 ================================ */
 
 .smart-cta {
     padding: 0;
-    background: #08272d;
+
+    background:
+        radial-gradient(circle at 72% 30%,
+            rgba(22, 112, 111, 0.18),
+            transparent 34%),
+        linear-gradient(135deg,
+            #062b31 0%,
+            #07383e 45%,
+            #052329 100%);
+
     color: white;
+
+    border-top: 1px solid rgba(255, 118, 26, 0.16);
 }
 
 .smart-cta-inner {
@@ -982,6 +1014,30 @@ form {
 .smart-visual {
     min-height: 650px;
     position: relative;
+    overflow: hidden;
+}
+
+
+/* curved join instead of harsh split */
+
+.smart-visual::before {
+    content: "";
+    position: absolute;
+    z-index: 4;
+
+    width: 170px;
+
+    top: -40px;
+    bottom: -40px;
+    left: -95px;
+
+    border-right: 8px solid #ff6718;
+    border-radius: 0 50% 50% 0;
+
+    background: #07343a;
+
+    box-shadow:
+        20px 0 45px rgba(0, 0, 0, 0.08);
 }
 
 .smart-image {
@@ -989,8 +1045,10 @@ form {
     height: 100%;
     min-height: 650px;
     position: relative;
+
     background-image:
         url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1400&q=85");
+
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -999,17 +1057,19 @@ form {
 .smart-overlay {
     position: absolute;
     inset: 0;
+
     background:
         linear-gradient(90deg,
-            rgba(8, 39, 45, 0.75) 0%,
-            rgba(8, 39, 45, 0.14) 55%,
-            rgba(8, 39, 45, 0.1) 100%);
+            rgba(8, 39, 45, 0.78) 0%,
+            rgba(8, 39, 45, 0.32) 24%,
+            rgba(8, 39, 45, 0.08) 62%,
+            rgba(8, 39, 45, 0.04) 100%);
 }
 
 .qr-card {
     width: 230px;
     position: absolute;
-    left: 10%;
+    left: 15%;
     bottom: 10%;
     padding: 22px;
     border-radius: 18px;
@@ -1017,6 +1077,7 @@ form {
     color: #0a252b;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(8px);
+    z-index: 5;
 }
 
 .qr-top {
@@ -1092,6 +1153,7 @@ form {
     max-width: 250px;
     text-align: right;
     color: white;
+    z-index: 5;
 }
 
 .smart-quote small {
@@ -1105,6 +1167,7 @@ form {
     display: block;
     margin-top: 3px;
     font-size: 24px;
+    color: #ff7130;
 }
 
 .smart-badge {
@@ -1115,11 +1178,13 @@ form {
     align-items: center;
     gap: 12px;
     padding: 15px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
     border-radius: 15px;
     background: rgba(8, 39, 45, 0.88);
     color: white;
     backdrop-filter: blur(12px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    z-index: 5;
 }
 
 .smart-badge>span {
@@ -1158,8 +1223,9 @@ footer {
     justify-content: space-between;
     gap: 30px;
     padding: 35px 5%;
-    background: #051719;
+    background: #031416;
     color: #bac5c2;
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
 }
 
 footer>p {
@@ -1310,6 +1376,10 @@ footer>small {
     .smart-visual,
     .smart-image {
         min-height: 550px;
+    }
+
+    .smart-visual::before {
+        display: none;
     }
 
     footer {
